@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Fandom</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme4.css">-->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!-- use this style for testing and development purposes -->
+    <!--<style type="text/css">
+        .container {
+            border: 2px dotted green;
+        }
+        
+        .row {
+            border: 1px dotted red;
+        }
+        
+        .row [class*=' col-'] {
+            border: 2px dotted purple;
+        }
+    </style>-->
+
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+</head>
+
+<body>
+
+    <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- hamburger button. do not touch! -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+                <div class="navbar-brand" href="#">
+                    <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+                    <a href="index.html">
+                        <i class="fa fa-home button-class"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- THIS UL HANDLES OUR LINKS -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="page1_theartist.html">The Artist</a></li>
+                    <li><a href="page2_themovies.html">The Movies</a></li>
+                    <li><a href="page3_thefandom.html">The Fandom</a></li>
+                    <!-- to make more links, make some <li> in here -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--This container is to hold EVERYTHING!-->
+    <div class="container">
+        <!--row-1-->
+        <div class="row">
+            <!--col-1-->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="thumbnail">
+                    <img src="http://pa1.narvii.com/6304/6bc12161096a0ecdb3f139d44ff1886372a6f1fd_hq.gif">
+                    <div class="caption">
+                        <h3>Upcoming Events</h3>
+                        <div class="table-responsive">
+                            <table class="table p-font-type">
+                                <tr>
+                                    <td>28th April</td>
+                                    <td>Ghibli-con</td>
+                                    <td>Suntec City Convention Center</td>
+                                </tr>
+                                <tr>
+                                    <td>30th May</td>
+                                    <td>The Music of Studio Ghibli<br>
+                                        <td>Esplanade<br>
+                                </tr>
+                                <tr>
+                                    <td>5th June-5th August</td>
+                                    <td>Hayao: Portrait of an Artist</td>
+                                    <td>ArtScience Museum</td>
+                                </tr>
+                                <tr>
+                                    <td>1st December - 31st December</td>
+                                    <td>Ghibli Film Festival</td>
+                                    <td>Cathay Cinemas</td>
+                                </tr>
+                            </table>
+                            <p class="p-font-type">Register through us for special discount codes!</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <h3>Register for Events!</h3>
+                        <form action="https://script.google.com/macros/s/AKfycbwpCt_VQwsTTqhm4ve5F76kPKTzifliGecNVUKVaQDoB6sfx6o/exec" method="post" class="p-font-type">
+                            <div class="form-group">
+                                <label for "name-id">Name</label>
+                                <input id="name-id" class="form-control" type="text" name="NAME">
+                            </div>
+                            <div class="form-group">
+                                <label for "email-id">Email</label>
+                                <input id="email-id" class="form-control" type="email" name="EMAIL">
+                            </div>
+                            <div class="form-group">
+                                <label for="sel1">Select Event</label>
+                                <select class="form-control" id="sel1" name="EVENT">
+                                    <option>Ghibli-con</option>
+                                    <option>The Music of Studio Ghibli</option>
+                                    <option>Hayao: Portrait of an Artist</option>
+                                    <option>Ghibli Film Festival</option>
+                                    </select>
+                                </ul>
+                            </div>
+                            <input type "submit" class="btn btn-primary pull-right" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--END of col-1-->
+            <!--col-2-->
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                <h3>Watch: Studio Ghibli - A brief History</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5ZDAPOao2X8"></iframe>
+                </div>
+                <hr>
+                <!--row 5-map-->
+                <h3>The Studio Ghibli Experience</h3>
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe src="https://goo.gl/UsFgQ0" class="responsive-embed"></iframe>
+                </div>
+            </div>
+            <!--END row 5-map-->
+            <!--END of col-2-->
+            <!--col-3-->
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Subscribe to our newsletter!</h3>
+                        <form action="https://script.google.com/macros/s/AKfycbwpCt_VQwsTTqhm4ve5F76kPKTzifliGecNVUKVaQDoB6sfx6o/exec" method="post" class="p-font-type">
+                            <div class="form-group">
+                                <label for "name-id">Name</label>
+                                <input id="name-id" class="form-control" type="text" name="NAME">
+                            </div>
+                            <div class="form-group">
+                                <label for "email-id">Email</label>
+                                <input id="email-id" class="form-control" type="email" name="EMAIL">
+                            </div>
+                            <input type "submit" class="btn btn-primary pull-right" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <h3>Follow us</h3>
+                <ul class="list-group p-font-type quote-color">
+                    <li class="list-group-item">
+                        <i class="fa fa-facebook fa-fw"></i>
+                        <a href="https://www.facebook.com/FansOfStudioGhibli/">FACEBOOK</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-twitter fa-fw"></i>
+                        <a href="https://twitter.com/ghibli_intl">TWITTER</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa fa-podcast fa-fw"></i>
+                        <a href="http://nerdist.com/tag/studio-ghibli/">LISTEN TO OUR PODCAST</a>
+                    </li>
+                </ul>
+            </div>
+            <!--END col-3-->
+
+
+        </div>
+        <!--END of row-1-->
+    </div>
+    <!--END of container-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+h1,h3 {
+    font-family: Raleway;
+    color: #0F1F38;
+}
+
+p, .p-font-type {
+    font-family: Merriweather;
+}
+
+.p-font-type {
+    color: #1B4B5A;
+}
+
+.quote-color {
+    color: #F55449;
+}
+
+.main-page{
+    color: #0F1F38;
+    font-size: 4rem;
+    font-style: bold;
+}
+
+.main-page-btn{
+    text-shadow: none;
+    font-size: 2rem;
+}
+
+span {
+    font-size: 2.5rem;
+    color: #1B4B5A;
+    text-shadow: 2px 1px 4px #F55449;
+}
+
+.jumbotron-image{
+    background-image:url(wallpaper.jpg);
+    background-size:cover;
+    background-position: center;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    height: 85vh;
+}
+
+
+.image-holder {
+    height: 200px; 
+}
+
+.button-color{
+    color:grey;
+}
